@@ -98,7 +98,7 @@ namespace TakeNoteApp
                     Console.WriteLine("1. Create Note");
                     Console.WriteLine("2. View Note By Id");
                     Console.WriteLine("3. View All Notes");
-                    Console.WriteLine("4. Update Nate By Id");
+                    Console.WriteLine("4. Update Note By Id");
                     Console.WriteLine("5. Delete Note By Id");
                     int choice = Convert.ToInt16(Console.ReadLine());
                     switch (choice)
@@ -135,9 +135,9 @@ namespace TakeNoteApp
                             {
                                 Console.WriteLine("id\ttitle\t\t\tdescription\t\t\tdate");
                                 int count = 0;
-                                foreach (var c in obj.ViewNote())
+                                foreach (var n in obj.ViewNote())
                                 {
-                                    Console.WriteLine($"{c.Id}\t {c.Title}\t {c.Description}\t {c.Date}");
+                                    Console.WriteLine($"{n.Id}\t {n.Title}\t {n.Description}\t {n.Date}");
                                     ++count;
                                 }
                                 Console.WriteLine($"Total Notes: {count}");
