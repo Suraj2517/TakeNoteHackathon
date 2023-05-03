@@ -175,7 +175,7 @@ namespace TakeNoteApp
                             }
                         default:
                             {
-                                Console.WriteLine("Invalid choice!!");
+                                Console.WriteLine("Wrong Choice Entered.");
                                 break;
                             }
 
